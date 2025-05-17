@@ -22,3 +22,5 @@ Queremos que você se sinta em casa, como se estivesse em sua própria Base Secr
 Junte-se à Nossa Guilda!Venha fazer parte do nosso santuário #FitNerd# e descubra que cuidar do corpo e da mente pode ser uma aventura épica!
 
 💪#NerdFitness #FitnessParaNerds #TreinoGeek #VidaSaudavel #AcademiaNerd
+
+Ficou hypado nesse projeto? Então acesse o meu site (https://fitnerd.netlify.app/) ou acesse a pasta "notebooks" deste repositório.
