@@ -25,6 +25,6 @@ Junte-se à Nossa Guilda!Venha fazer parte do nosso santuário #FitNerd# e descu
 
 💪#NerdFitness #FitnessParaNerds #TreinoGeek #VidaSaudavel #AcademiaNerd
 
-Ficou hypado nesse projeto? Então acesse o meu site (https://fitnerd.netlify.app/) ou acesse a pasta "notebooks" deste repositório.
+Ficou hypado nesse projeto? Então acesse o meu site <a href="https://fitnerd.netlify.app/" target="_blank">FitNerd</a> ou acesse a pasta "notebooks" deste repositório.
 
 Mas lembre-se, para executar os notebooks dos meus 3 agentes, entre com sua conta da Google e se diverta com esses carinhas expert em mundo FitNess.
