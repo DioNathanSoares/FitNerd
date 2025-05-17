@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>FitNerd</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+   
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <img src="\imagens\banner_topo.png" alt="Banner FitNerd" width="1024" height="170">
+        </div>
+    </header>
+
+    <main>
+        <section id="fitagente">
+            <h2>Para interagir com o nosso FitAgent, escolha o seu nível de habilidade na academia</h2>
+            <div class="cards-container">
+                <div class="card iniciante" onclick="window.open('https://colab.research.google.com/drive/1zXZq26gmH8HOO7cx2zBP1DLA-cDyM1xD?usp=sharing', '_blank');">
+                    <div class="card-text">Iniciante</div>
+                </div>
+                <div class="card intermediario" onclick="window.open('https://colab.research.google.com/drive/1x-CN-i6XSfsK6WFqYXpOozp1QLzC6HmU?usp=sharing', '_blank');">
+                    <div class="card-text">Intermediário</div>
+                </div>
+                <div class="card avancado" onclick="window.open('https://colab.research.google.com/drive/1MD-AIFcYI0BYueMWmENpLYDgUy8ot7-n?usp=sharing', '_blank');">
+                    <div class="card-text">Avançado</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dica">
+            <p>
+                "O importante não é ser o melhor, mas sim ser melhor que ontem."
+            </p>
+            
+            <p>Para te ajudar a escolher o nível de dificuldade, aqui está um guia rápido:</p>
+                            
+            <br> <b>Iniciante:</b> Pra você que nunca pegou em um peso na vida, turista de sala de musculação ou instagrammer.
+            
+            <br><b>Intermediário:</b> Pra você que já malha há algum tempo e sabe se executar bem, inclusive, ajuda a galera na última repetição.
+            
+            <br><b>Avnçado:</b> Pra você que treina há anos e já se considera o próximo Mr Olimpia (rs).
+
+        </section>
+
+        <section id="novidades">
+            <h2>Novidades em breve para você!</h2>
+            <div class="cards-container">
+                <div class="card em-breve">
+                    <img src="imagens/Maca_nutricao.png" alt="Nutricionista">
+                    <p>Nutricionista</p>
+                    <div class="em-breve-hover">Em Breve</div>
+                </div>
+                <div class="card em-breve">
+                    <img src="imagens/Pessoa_fisio.png" alt="Fisioterapeuta">
+                    <p>Fisioterapeuta</p>
+                    <div class="em-breve-hover">Em Breve</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="planos">
+            <h2>Planos</h2>
+            <div class="cards-container">
+                <div class="plano-card plano-1">
+                    <h3>Plano 1 - Básico</h3>
+                    <p>Mensal R$ 59,00</p>
+                    <button onclick="mostrarModal('plano1')">Contratar</button>
+                </div>
+                <div class="plano-card plano-2">
+                    <h3>Plano 2 - Intermediário</h3>
+                    <p>Mensal R$ 99,00</p>
+                    <button onclick="mostrarModal('plano2')">Contratar</button>
+                </div>
+                <div class="plano-card plano-3">
+                    <h3>Plano 3 - Completo</h3>
+                    <p>Mensal R$ 139,00</p>
+                    <button onclick="mostrarModal('plano3')">Contratar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="quem-somos">
+            <p>
+                A FitNerd nasceu da paixão por fitness e tecnologia, com o objetivo de
+                tornar o exercício físico mais acessível e agradável para todos,
+                especialmente para aqueles que se identificam como "nerds". Acreditamos
+                que todos, independentemente do seu histórico ou interesse por
+                exercícios, podem se beneficiar de um estilo de vida ativo e saudável.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        © 2024 FitNerd. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.tiktok.com/" target="_blank"><img src="imagens/redes/tiktok.png" alt="TikTok"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="imagens/redes/youtube.png" alt="YouTube"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="imagens/redes/X.png" alt="X"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/redes/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagens/redes/facebook.png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-texto"></p>
+            <button onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

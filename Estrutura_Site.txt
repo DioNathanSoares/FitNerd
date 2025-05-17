@@ -1,0 +1,39 @@
+Olá Gemini, estou criando um projeto para a finalização do meu curso e gostaria da sua ajuda. Vou desenvolver um site que tem interação com chatbot, para um público de pessoas em geral, com carinho especial pelos "nerds" (que nem sempre se sentem encorajados a fazer exercícios rs).
+
+O meu site tem a seguinte estrutura, conforme o anexo "prototipo.png" e preciso criar 3 arquivos, sendo:
+	1) Uma página index.html, contendo todo esqueleto do site e recursos que irei desenvolver, sendo estrutura assim:
+		a)Banner: um espaco para fazer a propagando do site;
+		b)Fitagente: um conteiner com uma imagem ao fundo e a opção de escolher entre 3 cards flutuantes;
+		c)Dica: um conteiner para explicar o que é cada nível de habilidade na academia;
+		d)Novidades: um conteiner para colocar os novos serviços que estarão disponíveis no futuro;
+		e)Planos: um conteiner para anunciar planos disponíveis para compra;
+		f)Quem somos: um conteiner para explicar um pouquinho da nossa história;
+		g)rodapé: um footer para deixar nossa marca registrada para o publico.
+	2) Uma página styles.css, contendo todo o estilo e elegância do meu site, para ele ficar beeeem bonito e renderizado.
+	3) Uma página script.js, contendo toda a mágica e interação que o site precisa.
+Importante: esses três arquivos precisam estar bem funcionais e otimizados. Me ajuda nessa missão?
+
+Então vamos lá a descrição do site:
+	1) No topo do site, na parte "banner" terei uma imagem na resolução 1024 x 170 e o nome desse arquivo é "banner_topo.png", que eu anexei pra você subir na estrutura do site;
+	2) Logo abaixo, na parte "Fitagente", terei uma estrutura para comportar os seguintes elementos:
+		a) Um título acima com o seguinte texto: "Para interagir com o nosso FitAgent", escolha o seu nível de habilidade na academia".
+		b) Três cards flutuantes que permite clicar sobre eles e ser direcionado a um notebook do google.colab, sendo que:
+			- O card "Iniciante", ao ser selecionado pelo usuário, deve direcionar para o arquivo "FitAgent_Iniciante.ipynb"
+			- O card "Intermediario", ao ser selecionado pelo usuário, deve direcionar para o arquivo "FitAgent_Intermediario.ipynb"
+			- O card "Iniciante", ao ser selecionado pelo usuário, deve direcionar para o arquivo "FitAgent_Avancado.ipynb"
+		c) Uma imagem ao fundo, de pessoas se exercitando em uma academia, com o nome do arquivo "exercitando.png", que eu anexei pra você subir nessa estrutura do site.
+	3) Em seguida, na parte "Dica", terei um estrutura simples, com um texto que está na imagem do protótipo, explicando os níveis de habilidade para selecionar.
+	4) Logo abaixo das dicas, terei a parte "Novidades", terei uma estrutura para comportar os seguintes elementos:
+		a) Dois cards flutuantes que permita passar o mouse sobre eles e aparece a palavra "Em Breve", sendo que:
+			- O card "Nutricionista" deve mostar o card da imagem "nutricionista.png".
+			- O card "Fisioterapeuta" deve mostar o card da imagem "fisioterapeuta.png".
+		b) Uma imagem ao fundo, de profissionais de nutrição e fisioterapia, com o nome do arquivo "profissionais.png", que eu anexei pra você subir nessa estrutura do site.
+	5) Abaixo das novidades, na parte "Planos", terei um estrutura de 3 cards flutuantes, para promover os planos disponíveis para contratação, sendo que:
+		a) Plano_1: é um plano com o texto "Plano 1 - Básico", com uma cor gradiente ao fundo (saindo do preto para o branco), e um botão só pra ressalçar e com o texto "Mensal R$ 59,00".
+		b) Plano_2: é um plano com o texto "Plano 2 - Intermediário", com uma cor gradiente ao fundo (saindo do preto para o azul), e um botão só pra ressalçar e com o texto "Mensal R$ 99,00".
+		c) Plano_3: é um plano com o texto "Plano 3 - Completo", com uma cor gradiente ao fundo (saindo do preto para o Vermelho), e um botão só pra ressalçar e com o texto "Mensal R$ 139,00".
+	6) Logo depois dos planos, uma parte "Quem Somos", terei um estrutura simples, com um texto que está na imagem do protótipo, explicando nossa história.
+	7) Por fim, o rodapé da página, contendo o texto da imagem e os ícones de acesso as redes sociais tiktok, youtube, x, instagem e facebook (neste momento, cada um dos ícones da rede social pode abrir diretamente a pagina inicial dessas redes sociais, pois ainda estou criando a página do FitNerd).
+
+Sei que foram muitas coisas, mas você consegue me ajudar com essa missão?
+

@@ -1,0 +1,392 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center; /* Centraliza o banner */
+}
+
+header #banner {
+    /* max-width: 1024px;  Removido para permitir que a imagem tenha sua largura original */
+    height: auto; /* Mantém a proporção da imagem */
+    display: flex; /* Adicionado para centralizar a imagem */
+    justify-content: center;
+    align-items: center;
+}
+
+header #banner img {
+    /* width: 100%; Ajustado para que a imagem se ajuste à largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Evita espaço extra abaixo da imagem */
+}
+
+
+main {
+    width: 100%;
+    padding: 20px;
+    flex: 1; /* Permite que o main cresça para ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+section {
+    margin-bottom: 50px;
+    width: 100%; /* Garante que as seções ocupem a largura total do main */
+    max-width: 1024px; /* Limita a largura das seções para melhor leitura */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #008000;
+}
+
+#fitagente {
+    background-image: url('/imagens/exercitando.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+#fitagente h2 {
+    color: #fff;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    /*background-color: rgba(255,255,255,0.9);*/ /* Remova ou comente esta linha */
+    padding: 0; /* Remova o padding */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinha o texto na parte inferior */
+    align-items: center;
+    position: relative; /* Importante para o posicionamento absoluto do texto */
+    overflow: hidden; /* Garante que a imagem não vaze */
+    background-size: cover; /* A imagem cobre todo o card */
+    background-position: center;
+    color: white; /* Cor do texto */
+}
+
+.iniciante {
+    background-image: url('/imagens/fisico_1.png');
+}
+
+.intermediario {
+    background-image: url('/imagens/fisico_2.png');
+}
+
+.avancado {
+    background-image: url('/imagens/fisico_3.png');
+}
+
+.card-text {
+    position: absolute;
+    bottom: 10px; /* Posiciona o texto na parte inferior */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro para o texto */
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#dica {
+    background-image: url('imagens/dica.png');
+    background-size: cover; 
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    color: #f5f0f0;
+    line-height: 1.5;
+}
+
+#novidades {
+    background-image: url('imagens/Profissionais.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+#novidades h2 {
+    color: #fff;
+    text-align: center;
+}
+
+
+#novidades .card.em-breve { /* Seletor mais específico */
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#novidades .card.em-breve img { /* Estilo para as imagens */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#novidades .card.em-breve p { /* Estilo para o texto */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    z-index: 1;
+    margin: 0; /* Removi a margem padrão do parágrafo */
+}
+
+/* Estilos para o hover */
+.em-breve-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#novidades .card.em-breve:hover .em-breve-hover {
+    opacity: 1;
+}
+
+#planos {
+    text-align: center;
+}
+
+.plano-card {
+    background-color: #eee; /* Remova esta linha */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    width: 250px; /* Largura fixa para os cards de plano */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    
+    /* Adicione estas linhas para usar os estilos base de .card */
+    background-color: rgba(255,255,255,0.9); /* Mesma cor de fundo de .card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Mesma sombra de .card */
+}
+
+.plano-card:hover {
+    transform: translateY(-10px);
+}
+
+.plano-1 {
+    background: linear-gradient(to bottom, #000000, #FFFFFF);
+    color: #000;
+}
+
+.plano-2 {
+    background: linear-gradient(to bottom, #000000, #0000FF);
+    color: #fff;
+}
+
+.plano-3 {
+    background: linear-gradient(to bottom, #000000, #FF0000);
+    color: #fff;
+}
+
+.plano-card button {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.plano-card button:hover {
+    background-color: #006000;
+}
+
+#quem-somos {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+#modal-titulo {
+    color: #008000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#modal-texto {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+
+@media screen and (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .plano-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .modal-content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header #banner img {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+}
