@@ -28,3 +28,8 @@ Junte-se à Nossa Guilda!Venha fazer parte do nosso santuário #FitNerd# e descu
 Ficou hypado nesse projeto? Então acesse o meu site <a href="https://fitnerd.netlify.app/" target="_blank">FitNerd</a> ou acesse a pasta "notebooks" deste repositório.
 
 Mas lembre-se, para executar os notebooks dos meus 3 agentes, entre com sua conta da Google e se diverta com esses carinhas expert em mundo FitNess.
+
+Recursos utilizados:
+  - Site construído com base no canvas (estruturado em 3 arquivos: HTML, CSS e JavaScript);
+  - 3 Notebooks criados para executar de acordo com a temperatura do tipo de conteúdo: iniciante, intermediário e avançado;
+  - Publicação do site para facilitar o acesso ao conteúdo em outros computadores e dispositivos.
