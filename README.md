@@ -15,6 +15,8 @@ Equipamentos de última geração: Esteiras que exibem dados de desempenho em re
 
 🧘‍♀️⚔️Espaço para e-sports: Relaxe após o treino (ou antes, se preferir! 🎮) em nossa área dedicada aos games.
 
+Nossos 3 Agentes IA, cada um para um nível de habilidade em academia, sendo: um novato (iniciante), um mais experiente (intermediário) e o próprio Mr. Olimpia (Avançado).
+
 Nossa Missão
 Acreditamos que todos, independentemente do seu nível de experiência com exercícios, podem alcançar seus objetivos de forma prazerosa e em um ambiente acolhedor.
 Queremos que você se sinta em casa, como se estivesse em sua própria Base Secreta. 🏠
@@ -24,3 +26,5 @@ Junte-se à Nossa Guilda!Venha fazer parte do nosso santuário #FitNerd# e descu
 💪#NerdFitness #FitnessParaNerds #TreinoGeek #VidaSaudavel #AcademiaNerd
 
 Ficou hypado nesse projeto? Então acesse o meu site (https://fitnerd.netlify.app/) ou acesse a pasta "notebooks" deste repositório.
+
+Mas lembre-se, para executar os notebooks dos meus 3 agentes, entre com sua conta da Google e se diverta com esses carinhas expert em mundo FitNess.
